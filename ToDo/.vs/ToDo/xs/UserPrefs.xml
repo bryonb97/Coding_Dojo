@@ -1,0 +1,16 @@
+﻿<Properties StartupConfiguration="{E2B924F7-9074-400D-AB05-76F6E6210DEA}|Default">
+  <MonoDevelop.Ide.ItemProperties.ToDo FirstBuild="True" PreferredExecutionTarget="Test1" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="ToDo/ViewController.cs">
+    <Files>
+      <File FileName="ToDo/AppDelegate.cs" Line="1" Column="1" />
+      <File FileName="ToDo/Main.cs" Line="1" Column="1" />
+      <File FileName="ToDo/ViewController.cs" Line="30" Column="48" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
