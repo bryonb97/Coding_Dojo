@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>My Registration Form</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+        <script src="main.js"></script> -->
+    </head>
+    <body>
+        <h1>My Registration Form</h1>
+        <div id="informationField">
+            <!-- Includeds First, Last, and email -->
+                <label for="firstName">First Name: </label>
+                <input type="text" id="firstName" name="firstName" placeholder="Enter First Name Here">
+        
+                <label for="lastName">Last Name: </label>
+                <input type="text" id="lastName" name="lastName" placeholder="Enter Last Name Here">
+
+                <label for="email">Email: </label>
+                <input type="text" id="email" name="email" placeholder="Enter Email Here">
+        </div>
+        
+        <div id="passwordField">
+                <label for="password">Password: </label>
+                <input type="password" id="password" name="password" placeholder="Enter A Password">
+        
+                <label for="confirmPassword">Confirm Password: </label>
+                <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Please renter your password">
+        </div>
+
+
+        <div id="date">
+                <label for="birthdate">Birthday: </label>
+                <input type="date" id="birthdate" name="birthdate">
+        </div>
+        
+        <div id="genderRadioBtn">
+                <h3>Gender:</h3>
+
+                <label for="male">Male: </label>
+                <input type="radio" id="male" name="gender" value="male">
+        
+                <label for="female">Female: </label>
+                <input type="radio" id="female" name="gender" value="female">
+        
+                <label for="other">Other: </label>
+                <input type="radio" id="other" name="gender" value="other">
+        </div>
+
+        <div id="descriptionTB">
+                <label for="description">A short description about yourself: </label>
+                <textarea name="description" id="description"></textarea>
+        </div>
+
+        <div id="selectSubmit">
+                <h3>Favorite Language:</h3>
+
+                <select name="favLanguage">
+                        <option value="javaScript">JavaScript</option>
+                        <option value="cSharp">C#</option>
+                        <option value="python">Python</option>
+                        <option value="python">English!</option>
+                </select>
+                    
+                <input type="submit" name="submitBtn">
+        </div>
+
+    </body>
+</html>
