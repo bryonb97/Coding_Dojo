@@ -1,0 +1,250 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+h3{
+    min-height: 90px;
+    width: 100px;
+}
+body{
+    background-color: white;
+}
+#wrapper{
+    background-color:  #442233;
+    margin: 20px 75px 20px 75px;
+}
+
+#header{
+    background-color: #ddeeff;
+    width: 1770px;
+    min-height: 100px;
+    margin-bottom: 50px;
+}
+
+    #header h1{
+        font-family: cursive;
+        text-align: left;
+        font-size: 50px;
+        margin-left: 20px;
+        padding-top: 20px;
+    }
+
+    #header h2{
+        font-size: 30px;
+        text-align: right;
+        margin-right: 20px;
+        margin-top: -70px;
+        padding: 30px;
+        vertical-align: top;
+    }
+
+#profile{
+    
+}
+
+    #profile img{
+        margin-right: 100px;
+        margin-left: 100px;
+        display: inline-block;
+        width: 700px;
+        height: 500px;
+        border: 8px solid silver;
+        vertical-align: top;
+    }
+
+#about{
+    vertical-align: top;
+    display: inline-block;
+    width: 700px;
+    min-height: 500px;
+    background-color: white;
+    margin-left: 925px;
+    margin-top: -500px;
+}
+
+    #about h3{
+        background-color: silver;
+        width: 700px;
+        min-height: 40px;
+        padding: 10px;
+        text-align: left;
+        color: white;
+        text-emphasis: bold;
+    }
+
+    #about p{
+        padding: 10px;
+        
+    }
+
+    #about a{
+        margin-top: 50px;
+        padding: 10px;
+    }
+
+.subcontent{
+    vertical-align: right;
+    display: inline;
+    padding: 100px;
+}
+
+.projectTitle{
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: -500px;
+    
+
+}
+
+#lamode{
+    vertical-align: top;
+    display: inline-block;
+    width: 400px;
+    min-height: 300px;
+    background-color: white;
+    margin: 75px 100px;
+}
+
+    #laModeImg img{
+        width: 400px;
+        min-height: 300px;
+    }
+
+    #lamode h3{
+        background-color: silver;
+        width: 400px;
+        min-height: 40px;
+        padding: 10px;
+        text-align: left;
+        color: white;
+        text-emphasis: bold;
+    }
+    
+    #lamode p{
+        padding: 25px;
+    }
+
+    #technologiesLaMode{
+
+    }
+
+#familycontacts{
+    vertical-align: top;
+    display: inline-block;
+    width: 400px;
+    min-height: 300px;
+    background-color: white;
+    margin: 75px;
+
+}
+
+    #familyContactsImg img{
+        width: 400px;
+        min-height: 300px;
+    }
+
+    #familycontacts h3{
+        background-color: silver;
+        width: 400px;
+        min-height: 40px;
+        padding: 10px;
+        text-align: left;
+        color: white;
+        text-emphasis: bold;
+    }
+
+    #familycontacts p{
+        padding: 25px;
+    }
+
+    #technologiesFamilyContacts{
+
+    }
+
+#fiveEleven{
+    vertical-align: top;
+    display: inline-block;
+    width: 400px;
+    min-height: 300px;
+    background-color: white;
+    margin: 75px;
+
+}
+    #fiveElevenImg img{
+        width: 400px;
+        min-height: 300px;
+    }
+
+    #fiveEleven h3{
+        background-color: silver;
+        width: 400px;
+        min-height: 40px;
+        padding: 10px;
+        text-align: left;
+        color: white;
+        text-emphasis: bold;
+    }
+
+    #fiveEleven p{
+        padding: 25px;
+    }
+
+    #technologiesfiveEleven{
+
+    }
+
+.button{
+    text-align: center;
+    margin: 10px;
+}
+
+    .button button{
+        background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+    }
+
+.techStickers img{
+    display: inline-block;
+    width: 64px;
+    height: 64x;
+    padding: 5px;
+    margin-top: 20px;
+}
+
+#footer{
+    background-color: lightgrey;
+    width: 1770px;
+    height: 80px;
+    margin-bottom: 30px;
+    text-align: center;
+    padding: 10px;
+}
+
+    #social{
+        margin: 10px;
+    }
+
+        #social img{
+            display: inline;
+            width: 32px;
+            height: 32px;
+            padding: 5px;
+            margin-bottom: 50px;
+        }
+
+            #social a{
+                text-align: center;
+                vertical-align: top;
+                margin-top: 10px;
+                padding-top: 15px;
+            }

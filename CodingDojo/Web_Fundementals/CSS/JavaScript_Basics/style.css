@@ -1,6 +1,7 @@
 *{
     padding: 0px;
     margin: 0px;
+    /* outline: 1px dotted red; */
 }
 
 #wrapper{
@@ -23,6 +24,7 @@
 
 h1{
     text-align: center;
+
     margin: 0px;
     border: 1px solid black;
 }
