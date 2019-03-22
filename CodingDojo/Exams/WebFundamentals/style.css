@@ -172,15 +172,7 @@ div.btmImages{
     .caption{
         padding: 10px;
         display: block;
-    }
-
-    .caption p{
-        vertical-align: bottom;
-        margin-left: 10px;
-    }
-
-    .caption h3{
-        padding: 10px;
+        margin-left: -10px;
     }
 
 .portfolioInfo{
