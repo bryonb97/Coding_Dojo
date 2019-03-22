@@ -1,0 +1,162 @@
+*{
+    box-sizing: border-box;
+    vertical-align: top;
+    margin: 0px;
+    padding: 0px;
+    /* outline: 1px red dotted; */
+}
+
+#wrapper{
+    width: 100%;
+    background-color: white;
+    margin: 0px auto;
+}
+
+#top{
+    background-color: #225577;
+}
+
+
+#header{
+    text-align: left;
+}
+
+
+    #header p{
+        text-align: right;
+        padding: 10px;
+    }
+
+    #header img{
+        width: 45%;
+        justify-content: left;
+    }
+
+#menu{
+    background-color: #4477aa;
+    width: 75%;
+    text-align: center;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+    #menu nav a{
+        margin: 15px;
+        padding: 0px auto;
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+    }
+
+#searchbar{
+    display: inline-block;
+    vertical-align: top;
+    background-color: #45443F;
+    padding: 20px;
+    width: 30%;
+    border-radius: 5px;
+    margin-left: 200px;
+    margin-top: 15px;
+
+}
+
+    #searchBarTxt{
+        width: 63%;
+        padding: 10px;
+        margin: 0px auto;
+    }
+
+    #searchbar #goBtn{
+        display: inherit;
+        padding: 10px;
+        width: 35%;
+        background-color: #4477aa;
+    }
+
+#maincontent{
+    padding: 10px;
+    display: inline-block;
+}
+
+    #maincontent p{
+        padding: 30px;
+        display: flex;
+    }
+
+    #maincontent ul{
+        list-style-type: none;
+    }
+
+        #maincontent ul li a{
+            text-decoration: underline;
+            color: white;
+        }
+
+#subcontent{
+    display: flex;
+    width: 100%;
+}
+
+.subcontentTitles{
+    display: inline-flex;
+    background-color: #9EC0DC;
+    height: 2%;
+    width: 85%;
+    /* margin: 0px auto; */
+    margin-left: 40px;
+    margin-top: 10px;
+}
+
+    .subcontentTitles h2{
+        text-align: center;
+        padding: 10px;
+        margin-left: 60px;
+    }
+
+    #subcontent ul{
+        list-style-type: disc;
+        text-align: center;
+    }
+
+        #subcontent ul li a{
+            text-align: center;
+            color: skyblue;
+            text-decoration: none;
+        }
+
+#gettingstarted{
+    display: inline-block;
+}
+
+    #gettingstarted ul{
+        list-style-type: disc;
+        text-align: center;
+    }
+
+    #gettingstarted p{
+        padding: 75px;
+    }
+
+#applications{
+    display: inline-block;
+    margin-right: 100px;
+}
+
+    #applications ul{
+        list-style-type: disc;
+    }
+
+        #applications ul li a{
+            text-align: center;
+            color: skyblue;
+        }
+
+    #applications p{
+        padding: 75px;
+    }
+
+#footer{
+    width: 100%;
+    background-color: #225577;
+    text-align: center;
+}

@@ -1,0 +1,194 @@
+*{
+    box-sizing: border-box;
+    vertical-align: top;
+    padding: 0px;
+    margin: 0px;
+    /* outline: 1px red dotted; */
+}
+
+body{
+    color: white;
+    margin: 0 auto;
+}
+
+h3{
+    color: #C56E2C;
+}
+
+#wrapper{
+    background-color: #13191B;
+    width: 80%;
+    margin: 0px auto;
+}
+
+#banner{
+    display: flex;
+    justify-content: space-between;
+    background-color: #1A1A1A;
+    padding: 25px;
+}
+
+    #banner img{
+        /* height: 15%; */
+        width: 20%;
+        padding: 15px;
+    }
+
+#menu{
+    vertical-align: middle;
+    width: 100%;
+    background-color: #454545;
+    text-align: left;
+}
+
+    #menu nav{
+        display: flex;
+    }
+
+        #menu nav a{
+            color: #808080;
+            text-decoration: none;
+            margin: 16px;
+        }
+
+            #menu nav a span{
+                color: white;
+            }
+
+.divider{
+    margin: 10px;
+    justify-content: space-evenly;
+    display: flex;
+    background-color: #393939;
+    width: 3px;
+    height: 30px;
+}
+
+#mainlogo{
+    width: 100%;
+}
+
+#break{
+    height: 10px;
+    width: 100%;
+    background-color: #323131;
+
+}
+
+    #mainlogo img{
+        /* display: inline-block; */
+        width: 100%;
+    }
+
+#cardContainer{
+    /* position: relative; */
+    display: flex;
+    justify-content: space-between;
+    background-color: #1A1A1A;
+    width: 100%;
+    padding: 10px;
+
+}
+
+.Cards{
+    width: auto;
+    padding: 10px;
+}
+
+    .Cards img{
+        width: 100px;
+        padding: 10px;
+    }
+
+#gradient{
+    padding: 75px;
+    width: 100%;
+
+    /* Carbon Fiber Background I found on Stack Overflow */
+    background-color: #0A0A0A;
+    background-color: rgb(32, 32, 32);
+    background-image: linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black), linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black), linear-gradient(to bottom, rgb(8, 8, 8), rgb(32, 32, 32));
+    background-size: 10px 10px, 10px 10px, 10px 5px;
+    background-position: 0px 0px, 5px 5px, 0px 0px;
+    
+}
+
+    #gradient p{
+        font-size: 14px;
+        margin-left: 10px;
+    }
+
+    #gradient h2{
+        padding: 10px;
+    }
+
+    #gradient input{
+        vertical-align: middle;
+        margin-left: 1100px;
+        margin-top: -60px;
+        display: inline-block;
+        background-color: #F28433;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        border-radius: 5px;
+        width: 250px;
+        height: 50px;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+#portfolio{
+    display: flex;
+    width: 100%;
+    background-color: #1A1A1A;
+    padding: 30px;
+    justify-content: space-between;
+}
+
+#footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+    #footer a{
+        text-decoration: none;
+        color: #F28433;
+    }
+
+div.btmImages{
+    display: inline-block;
+    text-align: left;
+    width: 100%;
+    padding: 10px;
+}
+
+    .btmImages img{
+        border: 5px solid #2A2A2A;
+        width: 100%;
+    }
+
+    .caption{
+        padding: 10px;
+        display: block;
+    }
+
+    .caption p{
+        vertical-align: bottom;
+        margin-left: 10px;
+    }
+
+    .caption h3{
+        padding: 10px;
+    }
+
+.portfolioInfo{
+    display: flex; 
+}
+
+#top{
+    text-decoration: none;
+    margin-left: 1450px;
+    color: grey;
+}
