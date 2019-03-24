@@ -1,0 +1,89 @@
+.desktop{
+  
+}
+
+  .desktop h1{
+    background-color: darkgrey;
+  }
+
+  .desktop p{
+    background-color: grey;
+  }
+
+  .desktop h3{
+    background-color: yellow;
+  }
+
+.tablet{
+  
+}
+
+  .tablet h1{
+    background-color: darkgrey;
+  }
+
+  .tablet p{
+    background-color: grey;
+  }
+
+  .tablet h3{
+    background-color: yellow;
+  }
+
+.mobile{
+  
+}
+
+  .mobile h1{
+    background-color: darkgrey;
+  }
+
+  .mobile p{
+    background-color: grey;
+  }
+
+  .mobile h3{
+    background-color: yellow;
+  }
+
+@media only screen and (min-width: 1024px) {
+    .desktop{
+      display: block;
+    }
+
+    .tablet{
+      display: none;
+    }
+
+    .mobile{
+      display: none;
+    }
+  }
+
+@media only screen and (max-width: 1024px) {
+  .desktop{
+    display: none;
+  }
+
+  .tablet{
+    display: block;
+  }
+
+  .mobile{
+    display: none;
+  }
+  }
+
+@media only screen and (max-width: 480px) {
+  .desktop{
+    display: none;
+  }
+
+  .tablet{
+    display: none;
+  }
+
+  .mobile{
+    display: block;
+  }
+  }
