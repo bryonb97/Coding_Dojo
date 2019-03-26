@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>PokeAPI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles.css">
+    <!-- Import jQuery Script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+</head>
+<body>
+    
+<!-- app search page-->
+<div data-role="page" id="pokeSearch-page">
+        <div data-role="header" data-theme="b">
+                <h1>Pokeapi Demos</h1>
+        </div>
+        <div data-role="main" class="ui-content">
+        <form id="pokeForm" action="#pokeDetails-page" method="post">
+            <div>
+            <label for="pokeInput">Pokemon name or number:
+            <input type="text" name="pokeInput" id="pokeInput" placeholder="Name/Number" value="">
+            </div>
+            <br>
+            <div>
+            <a class="ui-btn" onclick="pokeSubmit();">Search
+            </div>
+        </form>
+        <div>
+        <ul data-role="listview" data-inset="true" id="pokeDetails">
+        </ul>
+        </div>
+        </div>
+    </div>
+
+</body>
+</html>
