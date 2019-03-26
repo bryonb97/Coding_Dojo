@@ -1,5 +1,5 @@
-1
-print1To255()Print all the integers from 1 to 255.
+// 1
+// print1To255()Print all the integers from 1 to 255.
 
 function Print1To255(){
   for(var i = 1; i <= 255; i++){
@@ -8,8 +8,8 @@ function Print1To255(){
 }
 Print1To255();
 
-2
-printIntsAndSum0To255()Print integers from 0 to 255, and with each integer print the sum so far.
+// 2
+// printIntsAndSum0To255()Print integers from 0 to 255, and with each integer print the sum so far.
 
 function PrintIntsAndSum0To255(){
   let sum = 0;
@@ -20,8 +20,8 @@ function PrintIntsAndSum0To255(){
 }
 PrintIntsAndSum0To255();
 
-3
-printMaxOfArray(arr)Given an array, find and print its largest element
+// 3
+// printMaxOfArray(arr)Given an array, find and print its largest element
 
 var arr = [1,2,3,4,5];
 
@@ -37,8 +37,8 @@ function PrintMaxOfArray(arr){
 }
  PrintMaxOfArray(arr);
 
-4
-Return Odds Array 1-255 returnOddsArray1To255()Create an array with all the odd integers between 1 and 255 (inclusive).
+// 4
+// Return Odds Array 1-255 returnOddsArray1To255()Create an array with all the odd integers between 1 and 255 (inclusive).
 var arr = [];
 function returnOddsArray1To255(){
   for(var i = 1; i <= 255; i++){
@@ -48,8 +48,8 @@ function returnOddsArray1To255(){
 }
 returnOddsArray1To255();
 
-4
-Return Array Count Greater than Y return ArrayCountGreaterThanY(arr, Y)Given an array and a value Y, count and print the number of array values greater than Y.
+// 4
+// Return Array Count Greater than Y return ArrayCountGreaterThanY(arr, Y)Given an array and a value Y, count and print the number of array values greater than Y.
 var arr = [1,2,3,4,5];
 var count = 0;
 function ArrayCountGreaterThanY(arr, Y){
@@ -63,8 +63,8 @@ function ArrayCountGreaterThanY(arr, Y){
 }
 ArrayCountGreaterThanY(arr, 2);
 
-5
-Print Max, Min, Average Array Values printMaxMinAverageArrayVals(arr)Given an array, print the max, min and average values for that array.
+// 5
+// Print Max, Min, Average Array Values printMaxMinAverageArrayVals(arr)Given an array, print the max, min and average values for that array.
 var arr = [1,2,3,4,5,6];
 var max = arr[0];
 var min = arr[0];
@@ -86,7 +86,7 @@ function printMaxMinAvgArrayVals(arr){
 }
 printMaxMinAvgArrayVals(arr);
 
-Swap String for Array Negative Values swapStringForArrayNegativeVals(arr)Given an array of numbers, replace any negative values with the string 'Dojo'.
+// Swap String for Array Negative Values swapStringForArrayNegativeVals(arr)Given an array of numbers, replace any negative values with the string 'Dojo'.
 
 var arr = [-1,2,-3];
 var replace = "Dojo";
@@ -101,8 +101,8 @@ function swapStringForArrayNegativeVals(arr){
 }
 swapStringForArrayNegativeVals(arr);
 
-13
-shiftArrayValsLeft(arr)Given an array, move all values forward (to the left) by one index, dropping the first valueand leaving a 0(zero) value at the end of the array.
+// 13
+// shiftArrayValsLeft(arr)Given an array, move all values forward (to the left) by one index, dropping the first valueand leaving a 0(zero) value at the end of the array.
 
 var arr = [1,2,3,4,5];
 

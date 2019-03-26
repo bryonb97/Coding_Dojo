@@ -1,0 +1,74 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    vertical-align: top;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+body{
+    background-color: darkslategray;
+}
+.red{
+    color: red;
+}
+
+.divider{
+    width: 75%;
+    height: 8px;
+    background-color: grey;
+    margin-left: 50px;
+}
+
+#addClassContainer{
+    display: inline-block;
+    margin: 30px;
+}
+
+    #addClassContainer button{
+        background-color: #555;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+    }
+
+#slidetoggleContainer{
+    display: inline-block;
+    margin: 30px;
+}
+
+    #slidetoggleContainer button{
+        background-color: #555;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+    }
+
+    #hidden{
+        display: none;
+    }
+
+#appendContainer{
+    display: inline-block;
+    margin: 30px;
+}
+
+    #appendContainer button{
+        background-color: #555;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+    }

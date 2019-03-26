@@ -1,0 +1,26 @@
+body{
+    background-color: black;
+}
+
+div.row div{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
+
+div.brick{
+    background-color: blue;
+}
+
+div.coin{
+    background: url('/JavaScript/Assignments/PacMan/images/coin.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+div.pacman{
+    background: url('/JavaScript/Assignments/PacMan/images/Pacman.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
