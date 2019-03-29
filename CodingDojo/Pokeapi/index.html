@@ -1,39 +1,51 @@
-<!DOCTYPE html:X-UA-Compatible>
+<!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>PokeAPI</title>
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="styles.css">
     <!-- Import jQuery Script -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="main.js"></script>
 </head>
+
 <body>
-    
-<!-- app search page-->
-<div id="pokeSearch-page">
-        <div data-theme="b">
-                <h1>Pokeapi</h1>
-        </div>
-        <div  class="ui-content">
-        <form id="pokeForm" action="#pokeDetails-page" method="post">
-            <div>
-            <label for="pokeInput">Pokemon name or number:
-            <input type="text" name="pokeInput" id="pokeInput" placeholder="Name/Number" value="">
+
+    <!-- app search page-->
+    <div id="wrapper">
+        <div id="pokeSearch-page">
+            <div id="header">
+                <h1>PokeAPI</h1>
             </div>
-            <br>
-            <div>
-            <a class="ui-btn" onclick="pokeSubmit();">Search
+            <div class="ui-content">
+                <form id="pokeForm" action="#pokeDetails-page" method="post">
+                    <div>
+                        <label for="pokeInput">Pokemon name or number:
+                            <input type="text" name="pokeInput" id="pokeInput" placeholder="Name/Number" value="">
+                            <!-- <div id="circle1"><div class="whiteOutline">Test</div></div> -->
+                    </div>
+                    <br>
+                    <div>
+                        <input type="button" class="ui-btn" value="Search">
+                    </div>
+                    <br>
+                    <div>
+                    
+                    </div>
+                </form>
+                <div>
+                    <ul id="pokeDetails">
+                    </ul>
+                </div>
             </div>
-        </form>
-        <div>
-        <ul id="pokeDetails">
-        </ul>
-        </div>
         </div>
     </div>
 
+    
 </body>
+
 </html>
