@@ -55,8 +55,15 @@ $(function () {
                             success: function (dataAbility) {
                                 var pokeWeight = dataAbility.weight;
                                 var pokeHeight = dataAbility.height;
-                                var abilityName = dataAbility.abilities.ability;
-                                var mainAbility = dataAbility.abilities[0].ability.name;
+                                var hiddenAbility = dataAbility.abilities[0].ability.name;
+                                var mainAbility = dataAbility.abilities[1].ability.name;
+
+                                if (hiddenAbility == true) {
+                                    hiddenAbility = dataAbility.abilities[0].ability.name;
+                                } else {
+                                    mainAbility = dataAbility.abilities[1].ability.name;
+                                }
+
                                 var moves = dataAbility.moves[0].move.name;
 
                                 for (var i = 0; i < dataAbility.moves.length; i++) {
@@ -71,18 +78,23 @@ $(function () {
                                 li += '<h1 id="pokeID">#' + pokeID + ' ' + pokeName + '</h1>';
                                 li += '<h2 id="pokeOrder">' + 'Order: ' + pokeOrder + '</h2>';
 
-                                li += '<p id="pokeType">Type 1: ' + pokeType1 + '</p>';
+                                li += '<p id="pokeType1Color">' + 'Type 1: ' + pokeType1 + '</p>'; 
 
                                 // only display Type 2 if it is not null
                                 if (pokeType2 != null) {
-                                    li += '<p id="pokeType">Type 2: ' + pokeType2 + '</p>';
+                                    li += '<p class="pokeTypeColor2">Type 2: ' + pokeType2 + '</p>';
                                 }
 
-                                li += '<h1 id="mainAbility">' + mainAbility + '</h1>';
+                                
+
+                                li += '<h1 id="mainAbility">Main Ability: ' + mainAbility + '</h1>';
+                                li += '<h1 id="hiddenAbility">Hidden Ability: ' + hiddenAbility + '</h1>';
 
 
 
                                 li += '<input type="button" class="btnDark" id="showMovesBtn" onclick="showMoves();" value="Show Moves">';
+
+                                li += '<input type="button" class="btnDark" id="getTypeColorBtn" onclick="getTypeColor();" value="Show Type Color">';
 
                                 for (var i = 0; i < dataAbility.moves.length; i++) {
                                     moves = dataAbility.moves[i].move.name;
@@ -110,6 +122,10 @@ $(function () {
                 $("#showMovesBtn").click(function () {
                     // alert("Button Clicked!");
                 });
+
+                $("#getTypeColorBtn").click(function () {
+                    alert("Button Clicked!");
+                });
             }
         })
     });
@@ -118,4 +134,86 @@ $(function () {
 function showMoves() {
     // console.log("Showing moves");
     $(".movesList").slideToggle("slow");
+}
+
+function getTypeColor(type){
+    // alert("getType Color Called!");
+    switch (pokeType1) {
+        case "bug":
+            type = "bug";
+            getTypeColor();                                 
+            console.log("Changed color to: Green");
+            console.log("Type: " + pokeType1 + "!");
+            break;
+        case "dark":
+
+            console.log("Type: " + pokeType1 + "!");
+            break;
+        case "dragon":
+
+            console.log("Type: " + pokeType1 + "!");
+            break;
+        case "electric":
+
+            console.log("Type: " + pokeType1 + "!");
+            break;
+        case "fairy":
+
+            console.log("Type: " + pokeType1 + "!");
+            break;
+        case "fighting":
+
+            console.log("Type: " + pokeType1 + "!");
+            break;
+        case "fire":
+
+            console.log("Type: " + pokeType1 + "!");
+            break;
+        case "flying":
+
+            console.log("Type: " + pokeType1 + "!");
+            break;
+        case "ghost":
+
+            console.log("Type: " + pokeType1 + "!");
+            break;
+        case "grass":
+
+            console.log("Type: " + pokeType1 + "!");
+            break;
+        case "ground":
+
+            console.log("Type: " + pokeType1 + "!");
+            break;
+        case "ice":
+            console.log("Type: " + pokeType1 + "!");
+            break;
+        case "normal":
+
+            console.log("Type: " + pokeType1 + "!");
+            break;
+        case "poison":
+
+            console.log("Type: " + pokeType1 + "!");
+            break;
+        case "psychic":
+
+            console.log("Type: " + pokeType1 + "!");
+            break;
+        case "rock":
+
+            console.log("Type: " + pokeType1 + "!");
+            break;
+        case "steel":
+
+            console.log("Type: " + pokeType1 + "!");
+            break;
+        case "water":
+
+            console.log("Type: " + pokeType1 + "!");
+            break;
+        default:
+            console.log("Invalid Type");
+
+    }
 }

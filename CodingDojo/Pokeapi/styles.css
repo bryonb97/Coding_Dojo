@@ -113,3 +113,13 @@ ul{
     margin-bottom: 30px;
 
 }
+
+#pokeDetails{
+    list-style-type: none;
+}
+
+.pokeTypeColor1{
+    text-align: center;
+    width: 100px;
+    border-radius: 15px;
+}

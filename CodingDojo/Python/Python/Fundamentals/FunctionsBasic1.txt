@@ -1,0 +1,15 @@
+1: Predicted: 5| Actual: 5
+2: Predicted: 10 | Actual: 10
+3: Predicted: 10 | Actual: 10
+4: Predicted: | Actual:
+5: Predicted: 5 | Actual: 5 None
+6: Predicted: 8 | Actual: 3, 5
+7: Predicted: 25 | Actual: 25
+8: Predicted: 7 | Actual: Error
+9: Predicted: 3, 3, 6 | Actual: 7, 14, 21
+10: Predicted: 10 | Actual: 8
+11: Predicted: 500, 500, 300, 500 | Actual: 500, 500, 300, 500
+12: Predicted: 500, 500, 300, 500 | Actual: 500, 500, 300, 500
+13: Predicted: 500, 500, 300, 300 | Actual: 500, 500, 300, 300
+14: Predicted: 1, 2, 3 | Actual: 1, 3, 2
+15: Predicted: 1, 3, 5, 10 | Actual: 1, 3, 5, 10
