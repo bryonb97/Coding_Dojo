@@ -67,3 +67,14 @@ def printInfo(dojo):
   print("{}".format(dojo[instructors]))    
 
 printInfo(dojo)
+
+
+def print_info(some_dict):
+  for key in some_dict.keys():
+    print(f"{len(some_dict[key])} {key.upper()}")
+    for item in some_dict[key]:
+      print(item)
+    # this prints a new line
+    print('\n')
+
+print_info(dojo)

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Playground</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+            vertical-align: top;
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+        body{
+            text-align: center;
+        }
+
+        .blueBox {
+            display: inline-flex;
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Welcome!</h1>
+
+    {% for x in range(0, times) %}
+    <div class="blueBox" style="background-color: {{ color }}"></div>
+    {% endfor %}
+</body>
+
+</html>
