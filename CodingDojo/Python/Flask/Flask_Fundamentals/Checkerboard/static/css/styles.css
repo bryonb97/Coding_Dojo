@@ -1,0 +1,24 @@
+*{
+    box-sizing: border-box;
+    vertical-align: top;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+table {
+    margin-left: 180px;
+}
+table tr td {
+    width: 40px;
+    height: 40px;
+}
+
+
+.color1{
+    background-color: red;
+}
+
+.color2{
+    background-color: black;
+}
