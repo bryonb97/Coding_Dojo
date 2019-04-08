@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Dojo Survey</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+
+<body>
+
+    <form class="container mt-5" action="result" method="POST">
+        <div class="form-row align-items-center input-group input-group-sm mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text mt-5" id="inputGroup-sizing-sm">Your Name: </span>
+            </div>
+            <input type="text" name="name" class="form-control mt-5" aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-sm">
+        </div>
+
+        <div class="form-row align-items-center input-group mb-3">
+            <div class="input-group-prepend">
+                <label class="input-group-text" for="inputGroupSelect01">Dojo Locations</label>
+            </div>
+            <select class="custom-select" name="select_location" id="inputGroupSelect01">
+                <option selected>Choose...</option>
+                <option value="Chicago">Chicago</option>
+                <option value="San Jose">San Jose</option>
+                <option value="Seattle">Seattle</option>
+            </select>
+        </div>
+
+        <div class="form-row align-items-center input-group mb-3">
+            <div class="input-group-prepend">
+                <label class="input-group-text" for="inputGroupSelect01">Favorite Language</label>
+            </div>
+            <select class="custom-select" name="select_language" id="inputGroupSelect01">
+                <option selected>Choose...</option>
+                <option value="C#">C#</option>
+                <option value="Python">Python</option>
+                <option value="JavaScript">JavaScript</option>
+            </select>
+        </div>
+
+        <div class="form-check">
+            <input class="form-check-input" name="check1" type="checkbox" value="checked" id="defaultCheck1">
+            <label class="form-check-label" for="defaultCheck1">
+                CheckME
+            </label>
+        </div>
+
+        <div class="form-check">
+            <input class="form-check-input" name="rbYes" type="radio" id="exampleRadios1" value="yes"
+                checked>
+            <label class="form-check-label" for="exampleRadios1">
+                Yes
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" name="rbNo" type="radio" id="exampleRadios1" value="no"
+                checked>
+            <label class="form-check-label" for="exampleRadios1">
+                No
+            </label>
+        </div>
+        </div>
+        <br>
+
+
+        <div class="form-row align-items-center">
+            <label for="exampleFormControlTextarea1">Comment(optional):</label>
+            <textarea class="form-control mb-5" name="comment" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
