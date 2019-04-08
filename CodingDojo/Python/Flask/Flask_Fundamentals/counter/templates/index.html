@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Counter</title>
+</head>
+
+<body>
+    <p>Counter</p>
+    <p>You have visited this page: {{session['count']}} times</p>
+    <form action='/increment' method='POST'>
+        <button>Add 2</button>
+    </form>
+    <form action='/clear' method='POST'>
+        <button>Clear counter</button>
+    </form>
+</body>
+
+</html>
