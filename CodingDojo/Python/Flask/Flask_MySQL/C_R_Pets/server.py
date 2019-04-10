@@ -1,4 +1,3 @@
-from datetime import datetime
 from flask import Flask, render_template, request, redirect
 from mysqlconnection import connectToMySQL    # import the function that will return an instance of a connection
 
