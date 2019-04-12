@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Ninja Money</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <h4>Your Buckaroos: {{request.session.total_buckaroos}}</h4>
+        <div class="row">
+            <form action="/process_money" method="POST">
+                {% csrf_token %}
+                <div class="col-md-3">
+                    <div class="well">
+                        <h4 class="text-default">
+                            <input type="hidden" name="building" value="farm"/>
+                            Farm 10 - 20 Buckaroos
+                        </h4>
+                    </div>
+                    <input type="submit" class="btn btn-success" value="Find Buckaroos!">
+                </div>
+            </form>
+            <form action="/process_money" method="POST">
+                {% csrf_token %}
+                <div class="col-md-3">
+                    <div class="well">
+                        <h4 class="text-default">
+                            <input type="hidden" name="building" value="cave"/>
+                            Cave 5 - 10 Buckaroos
+                        </h4>
+                    </div>
+                    <input type="submit" class="btn btn-success" value="Find Buckaroos!">
+                </div>
+            </form>
+            <form action="/process_money" method="POST">
+                {% csrf_token %}
+                <div class="col-md-3">
+                    <div class="well">
+                        <h4 class="text-default">
+                            <input type="hidden" name="building" value="house"/>
+                            House 2 - 5 Buckaroos
+                        </h4>
+                    </div>
+                    <input type="submit" class="btn btn-success" value="Find Buckaroos!">
+                </div>
+            </form>
+            <form action="/process_money" method="POST">
+                {% csrf_token %}
+                <div class="col-md-3">
+                    <div class="well">
+                        <h4 class="text-default">
+                            <input type="hidden" name="building" value="casino"/>
+                            Casino Earn/Lose 0 - 50 Buckaroos
+                        </h4>
+                    </div>
+                    <input type="submit" class="btn btn-warning" value="Find Buckaroos!">
+                </div>
+            </form>
+        </div>
+        <form action="/reset" method="POST">
+            {% csrf_token %}
+            <input type="submit" class="btn btn-primary pull-right" value="Play Again">
+        </form>
+        <div class="row">
+            <h3>Activities:</h3>
+            <div class="col-lg-12" style="height: 400px;">
+                {% for log in request.session.activities reversed %}
+                {% if "lost" in log %}
+                <h4 class="text-danger">{{ log }}</h4>
+                {% else %}
+                <h4 class="text-success">{{ log }}</h4>
+                {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
