@@ -22,7 +22,7 @@ def process_money(request):
             buckaroos = random.randint(2,6)
             request.session['activities'].append('You are earned ' + str(buckaroos) + ' buckaroos from the ' + request.POST['building'] + ' ' + '(' + str(datetime.now().strftime("%Y-%m-%d %H:%M")) + ')')
 
-        elif request.POST['building'] == 'casino':
+        else:
             buckaroos = random.randint(-50, 51)
             if buckaroos >= 0:
                 request.session['activities'].append('Entered a casino and earned ' + str(buckaroos) +' buckaroos' + ' ' + '(' + str(datetime.now().strftime("%Y-%m-%d %H:%M")) + ')')
