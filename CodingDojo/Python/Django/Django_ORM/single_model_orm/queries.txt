@@ -1,0 +1,31 @@
+from apps.your_app_name_here.models import *
+from apps.users_app.models import *
+
+ClassName.objects.create(field1="value for field1", field2="value for field2", etc.)
+first_user = users.objects.create(first_name='Bryon', last_name='Bauer', email='test@email.com', age='21')
+second_user = users.objects.create(first_name='Bob', last_name='Joe', email='test2@email.com', age='29')
+third_user = users.objects.create(first_name='Joe', last_name='Bob', email='test3@email.com', age='39')
+
+ClassName.objects.all() - gets all the records in the table
+users.objects.all()
+
+ClassName.objects.first() - gets the first record in the table
+users.objects.first()
+
+ClassName.objects.last() - gets the last record in the table
+users.objects.last()
+
+c = ClassName.objects.get(id=1) | c.field_name = "some new value for field_name" | c.save() 
+update = users.objects.get(id=3)
+update.last_name = 'waffles'
+update.save
+
+c = ClassName.objects.get(id=1) | c.delete() 
+del = users.objects.get(id=2)
+del.delete()
+
+ClassName.objects.all().order_by("field_name") - orders by field provided, ascending
+users.objects.all().order_by('first_name')
+
+ClassName.objects.all().order_by("-field_name") - orders by field provided, descending
+users.objects.all().order_by('-first_name')

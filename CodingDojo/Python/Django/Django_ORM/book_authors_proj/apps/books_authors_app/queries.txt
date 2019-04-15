@@ -1,0 +1,108 @@
+--------------------One To Many Relationships---------------------------------------------------------------------------------------
+class Author(models.Model):
+    name = models.CharField(max_length=255)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+class Book(models.Model):
+    title = models.CharField(max_length=255)
+    author = models.ForeignKey(Author, related_name="books")
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+this_author = Author.objects.get(id=2)	# get an instance of an Author
+my_book = Book.objects.create(title="Little Women", author=this_author)	# set the retrieved author as the author of a new book
+    
+# or in one line...
+my_book = Book.objects.create(title="Little Women", author=Author.objects.get(id=2))
+
+some_book = Book.objects.get(id=5)
+
+some_book.title		# returns a string that is the title of the book
+some_book.author	# returns the Author instance associated with this book
+
+some_book.author.name		# return the name of the author of this book
+some_book.author.id		# returns the id of the author of this book
+
+this_author = Author.objects.get(id=2)
+books = Book.objects.filter(author=this_author)
+    
+# one-line version:
+books = Book.objects.filter(author=Author.objects.get(id=2))
+
+--------------------Many To Many Relationships---------------------------------------------------------------------------------------
+class Book(models.Model):
+	title = models.CharField(max_length=255)
+	created_at = models.DateTimeField(auto_now_add=True)
+	updated_at = models.DateTimeField(auto_now=True)
+class Publisher(models.Model):
+	name = models.CharField(max_length=255)
+	books = models.ManyToManyField(Book, related_name="publishers")
+	created_at = models.DateTimeField(auto_now_add=True)
+	updated_at = models.DateTimeField(auto_now=True)
+
+
+this_book = Book.objects.get(id=4)	# retrieve an instance of a book
+this_publisher = Publisher.objects.get(id=2)	# retrieve an instance of a publisher
+    
+# 2 options that do the same thing:
+this_publisher.books.add(this_book)		# add the book to this publisher's list of books
+# OR
+this_book.publishers.add(this_publisher)	# add the publisher to this book's list of publishers
+
+
+this_book = Book.objects.get(id=4)	# retrieve an instance of a book
+this_publisher = Publisher.objects.get(id=2)	# retrieve an instance of a publisher
+    
+# 2 options that do the same thing:
+this_publisher.books.remove(this_book)		# remove the book from this publisher's list of books
+# OR
+this_book.publishers.remove(this_publisher)	# remove the publisher from this book's list of publishers
+
+this_publisher.books.all()	# get all the books this publisher is publishing
+this_book.publishers.all()	# get all the publishers for this book
+
+--------------------My Queries---------------------------------------------------------------------------------------
+c_sharp = Book.objects.create(title='C Sharp', desc='A description')
+java = Book.objects.create(title='Java', desc='A description')
+python = Book.objects.create(title='Python', desc='A description')
+php = Book.objects.create(title='PHP', desc='A description')
+ruby = Book.objects.create(title='Ruby', desc='A description')
+
+jane = Author.objects.create(first_name='Jane', last_name='Austen')
+emily = Author.objects.create(first_name='Emily', last_name='Dickinson')
+fyodor = Author.objects.create(first_name='Fyodor', last_name='Dostoevsky')
+william = Author.objects.create(first_name='William', last_name='Shakespeare')
+lau = Author.objects.create(first_name='Lau', last_name='Tzu')
+
+c_sharp = Book.objects.get(title='C Sharp')
+c_sharp.title = 'C#'
+c_sharp.save
+
+william = Author.objects.get(id=4)
+william.first_name = 'Bill'
+william.save
+
+jane.books.add(c_sharp, java)
+emily.books.add(c_sharp, java, python)
+fyodor.books.add(c_sharp, java, python, php)
+fyodor.books.add(Book.objects.get().all())
+
+python.authors.all()
+
+python.authors.get(id=1).delete()
+
+java.authors.get(id=5).add()
+
+fyodor.books.all()
+
+ruby.authors.all()
+--------------------Books/Authors Queries---------------------------------------------------------------------------------------
+c_sharp.authors.all()
+c_sharp.authors.add(jane)
+
+jane.books.all()
+
+c_sharp.authors.all().values()
+
+
+
