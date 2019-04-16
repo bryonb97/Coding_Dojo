@@ -1,26 +1,54 @@
-from django.shortcuts import render, HttpResponse
+from django.shortcuts import render, redirect, HttpResponse
 from apps.books_authors_app.models import *
 
 # Create your views here.
-def index(request):
-    c_sharp = Book.objects.create(title='C Sharp', desc='A description')
-    java = Book.objects.create(title='Java', desc='A description')
-    python = Book.objects.create(title='Python', desc='A description')
-    php = Book.objects.create(title='PHP', desc='A description')
-    ruby = Book.objects.create(title='Ruby', desc='A description')
-
-    jane = Author.objects.create(name="Jane Austen")
-    emily = Author.objects.create(name='Emily Dickinson')
-    fyodor = Author.objects.create(name='Fyodor Dostoevsky')
-    william = Author.objects.create(name='William Shakespeare')
-    lau = Author.objects.create(name='Lau Tzu')
-
-    jane.books.add(c_sharp, java)
-    emily.books.add(c_sharp, java, python)
-    fyodor.books.add(c_sharp, java, python, php)
+def showBooks(request):
     # fyodor.books.add(Book.objects.get().all())
 
     context = {
-        'all_authors': Author.objects.all(),
+        'books': Book.objects.all(),
     }
+
     return render(request, 'books_authors_app/index.html', context)
+
+def createBook(request):
+    book = Book.objects.create(title=request.POST['titleBox'], desc=request.POST['descBox'])
+
+    return redirect('/')
+
+def viewBook(request, id):
+    context = {
+            'books': Book.objects.filter(id=id).values(),
+        }
+
+    return render(request, 'books_authors_app/view.html', context)
+
+def removeBook(request, id):
+    this_book = Book.objects.filter(id=id)
+    this_book.delete()
+    return redirect('/authors')
+
+def showAuthors(request):
+
+    context = {
+        'authors': Author.objects.all(),
+    }
+
+    return render(request, 'books_authors_app/authors.html', context)
+
+def createAuthor(request):
+    author = Author.objects.create(name=request.POST['nameBox'], notes=request.POST['noteBox'])
+
+    return redirect('/authors')
+
+def viewAuthor(request, id):
+    context = {
+            'authors': Author.objects.filter(id=id).values(),
+        }
+
+    return render(request, 'books_authors_app/viewAuthor.html', context)
+
+def removeAuthor(request, id):
+    this_author = Author.objects.filter(id=id)
+    this_author.delete()
+    return redirect('/authors')

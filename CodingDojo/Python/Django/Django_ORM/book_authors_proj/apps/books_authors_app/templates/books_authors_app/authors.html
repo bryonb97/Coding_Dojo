@@ -20,23 +20,23 @@
 </head>
 
 <body>
-    <form action="/createBook" class="container mt-5" method="POST">
+    <form action="/createAuthor" class="container mt-5" method="POST">
         <div class="row">
             <div class="col">
                 {% csrf_token %}
-                <h1>Add a Book</h1>
+                <h1>Add an Author</h1>
 
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
-                        <span class="input-group-text" id="basic-addon1">Title</span>
+                        <span class="input-group-text" id="basic-addon1">Name</span>
                     </div>
-                    <input type="text" name="titleBox" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+                    <input type="text" name="nameBox" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
                 </div>
                 <div class="input-group">
                     <div class="input-group-prepend">
-                        <span class="input-group-text">Description</span>
+                        <span class="input-group-text">Notes</span>
                     </div>
-                    <textarea name="descBox" class="form-control"></textarea>
+                    <textarea name="noteBox" class="form-control"></textarea>
                 </div>
                 <button type="submit" class="btn btn-primary mt-2">Submit</button>
             </div>
@@ -51,11 +51,11 @@
                             </tr>
                         </thead>
                         <tbody>
-                            {% for book in books %}
+                            {% for author in authors %}
                             <tr>
-                                <td>{{book.id}}</td>
-                                <td>{{book.title}}</td>
-                                <td><a href="/viewBook/{{book.id}}">View</a> | <a href="/removeBook/{{book.id}}">Remove</a></td>
+                                <td>{{author.id}}</td>
+                                <td>{{author.name}}</td>
+                                <td><a href="/viewAuthor/{{author.id}}">View</a> | <a href="/removeAuthor/{{author.id}}">Remove</a></td>
                             </tr>
                             {% endfor %}
                         </tbody>
