@@ -15,7 +15,14 @@
 </head>
 
 <body>
-    <form class="container " action="createShow" method="POST">
+    {% if messages %}
+    <ul>
+        {% for message in messages %}
+        <li>{{ message }}</li>
+        {% endfor %}
+    {% endif %}
+    </ul>
+    <form class="container " action="createShow/" method="POST">
         {% csrf_token %}
         <h1>Add a New Show <p class="text-sm-right"><a href="/viewShows">Go Back</a></p>
         </h1>
@@ -40,7 +47,7 @@
             <div class="input-group-prepend">
                 <span class="input-group-text" id="basic-addon1">Release Date</span>
             </div>
-            <input type="datetime" name="releaseDateBox" class="form-control" aria-label="Username"
+            <input type="date" name="releaseDateBox" class="form-control" aria-label="Username"
                 aria-describedby="basic-addon1">
         </div>
 

@@ -15,6 +15,12 @@
 </head>
 
 <body>
+    {% if messages %}
+    <ul>
+        {% for message in messages %}
+        <li>{{ message }}</li>
+        {% endfor %}
+    </ul>
     <form class="container " action="/updateShow/{{show.id}}" method="POST">
         {% csrf_token %}
         <h1>Edit Show {{show.id}}<p class="text-sm-right"><a href="#">Go Back</a></p>
@@ -48,7 +54,8 @@
             <div class="input-group-prepend">
                 <span class="input-group-text">Description</span>
             </div>
-            <textarea class="form-control" name="descBox" aria-label="With textarea" value="{{show.desc}}"></textarea>
+            <textarea class="form-control" name="descBox" aria-label="With textarea"
+                value="{{show.description}}"></textarea>
         </div>
 
         <button type="submit" class="btn btn-primary mt-3">Update</button>
