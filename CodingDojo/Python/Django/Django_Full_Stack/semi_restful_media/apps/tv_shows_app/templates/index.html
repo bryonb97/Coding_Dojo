@@ -20,8 +20,8 @@
         {% for message in messages %}
         <li>{{ message }}</li>
         {% endfor %}
-    {% endif %}
     </ul>
+    {% endif %}    
     <form class="container " action="createShow/" method="POST">
         {% csrf_token %}
         <h1>Add a New Show <p class="text-sm-right"><a href="/viewShows">Go Back</a></p>
