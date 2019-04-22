@@ -106,7 +106,7 @@ class Task(models.Model):
     task_title = models.CharField(max_length=1000)
     task_location = models.CharField(max_length=1000)
     task_desc = models.CharField(max_length=100)
-    task_owner = models.ForeignKey(User, related_name='user_task')
+    task_owner = models.ForeignKey(User, related_name='user_task', on_delete='CASCADE')
     task_category= models.CharField(max_length=25, default=False, blank=True)
     users_task_list = models.ManyToManyField(User, related_name="task_list")
     created_at = models.DateTimeField(auto_now_add=True)
