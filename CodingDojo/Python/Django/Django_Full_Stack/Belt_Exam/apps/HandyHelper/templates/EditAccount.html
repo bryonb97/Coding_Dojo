@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+    <meta name='viewport' content='width=device-width,initial-scale=1'>
+    <title>User Account</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- JQuery -->
+    <script src='//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js' type='text/javascript'></script>
+    {% load static %}
+    <!-- CSS -->
+    <link rel='stylesheet' href="{% static 'app_name/css/styles.css' %}" type='text/css'>
+    <!-- JavaScript: Django doesn't like this unlesss you create the file -->
+    <script src="{% static '/app_name/script.js' %}" type='text/javascript'></script>
+</head>
+<body>
+        {% if messages %}
+        <ul class="list-group">
+            {% for message in messages %}
+            <li class="list-group-item list-group-item-danger">{{ message }} <a href="">X</a></li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+        <form class="container" action="/user/{{current_user}}/update" method="POST">
+                {% csrf_token %}
+                <h1>Edit User: {{current_user_name}}</h1>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1">First Name</span>
+                    </div>
+                    <input type="text" name="reg_first_name" class="form-control" aria-label="Username"
+                        aria-describedby="basic-addon1" placeholder="{{user.first_name}}">
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1">Last Name</span>
+                    </div>
+                    <input type="text" name="reg_last_name" class="form-control" aria-label="Username"
+                        aria-describedby="basic-addon1" placeholder="{{user.last_name}}">
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1">Email</span>
+                    </div>
+                    <input type="email" name="reg_email" class="form-control" aria-label="Username"
+                        aria-describedby="basic-addon1" placeholder="{{user.email}}">
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1">Current Password</span>
+                    </div>
+                    <input type="password" name="reg_password" class="form-control" aria-label="Username"
+                        aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1">New Password</span>
+                    </div>
+                    <input type="password" name="reg_confirm_password" class="form-control" aria-label="Username"
+                        aria-describedby="basic-addon1">
+                </div>
+                <button type="submit" class="btn btn-primary mt-2">Update</button>
+                <a href="/dashboard">Home</a>
+
+            </form>  
+</body>
+</html>

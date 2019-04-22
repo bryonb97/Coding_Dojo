@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+    <meta name='viewport' content='width=device-width,initial-scale=1'>
+    <title>Users Tasks</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- JQuery -->
+    <script src='//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js' type='text/javascript'></script>
+    {% load static %}
+    <!-- CSS -->
+    <link rel='stylesheet' href="{% static 'app_name/css/styles.css' %}" type='text/css'>
+    <!-- JavaScript: Django doesn't like this unlesss you create the file -->
+    <script src="{% static '/app_name/script.js' %}" type='text/javascript'></script>
+</head>
+
+<body>
+        {% if messages %}
+<ul class="messages">
+    {% for message in messages %}
+    <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+    {% endfor %}
+</ul>
+{% endif %}
+    <div class="container">
+        <div class="mt-3">
+            <h3>{{current_user_name}}'s Tasks:</h3>
+            <form action="" method="POST">
+                {% csrf_token %}
+                <table class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">Task</th>
+                            <th scope="col">Location</th>
+                            <th scope="col">Actions</th>
+                        </tr>
+                    </thead>
+                    {% for task in tasks %}
+                    <tbody>
+                        <tr>
+                            <th scope="row">{{task.task_title}}</th>
+                            <td>{{task.task_location}}</td>
+                            {% if task.task_owner.id == current_user %}
+                            <td><a href="/user/{{task.task_owner.id}}">View</a> | <a href="/task/new">Add</a> | <a
+                                    href="/task/{{task.id}}/edit">Edit</a> | <a href="/task/{{task.id}}/destroy">Remove</a></td>
+                            {% else %}
+                            <td><a href="#">View</a> | <a href="#">Add</a></td>
+                            {% endif %}
+
+                        </tr>
+                    </tbody>
+                    {% endfor %}
+                    <a href="/dashboard">Home</a>
+                    <br>
+
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

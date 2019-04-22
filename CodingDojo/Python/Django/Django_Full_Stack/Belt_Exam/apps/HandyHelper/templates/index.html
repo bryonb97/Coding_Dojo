@@ -21,53 +21,52 @@
 
 <body>
     {% if messages %}
-    <ul class="list-group">
+    <ul class="messages">
         {% for message in messages %}
-        <li class="list-group-item list-group-item-danger">{{ message }} <a href="">X</a></li>
-        {% endfor %}
+        <li{% if message.tags %} class="{{ message.tags }}" {% endif %}>{{ message }}</li>
+            {% endfor %}
     </ul>
     {% endif %}
 
     <div class="container">
         <div class="row">
             <div class="col">
-                <form action="register" method="POST">
-
+                <form action="/user/create" method="POST">
                     {% csrf_token %}
                     <h1>Register</h1>
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
                             <span class="input-group-text" id="basic-addon1">First Name</span>
                         </div>
-                        <input type="text" name="first_name" class="form-control" aria-label="Username"
+                        <input type="text" name="reg_first_name" class="form-control" aria-label="Username"
                             aria-describedby="basic-addon1">
                     </div>
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
                             <span class="input-group-text" id="basic-addon1">Last Name</span>
                         </div>
-                        <input type="text" name="last_name" class="form-control" aria-label="Username"
+                        <input type="text" name="reg_last_name" class="form-control" aria-label="Username"
                             aria-describedby="basic-addon1">
                     </div>
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
                             <span class="input-group-text" id="basic-addon1">Email</span>
                         </div>
-                        <input type="email" name="email" class="form-control" aria-label="Username"
+                        <input type="email" name="reg_email" class="form-control" aria-label="Username"
                             aria-describedby="basic-addon1">
                     </div>
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
                             <span class="input-group-text" id="basic-addon1">Password</span>
                         </div>
-                        <input type="password" name="password" class="form-control" aria-label="Username"
+                        <input type="password" name="reg_password" class="form-control" aria-label="Username"
                             aria-describedby="basic-addon1">
                     </div>
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
                             <span class="input-group-text" id="basic-addon1">Confirm Password</span>
                         </div>
-                        <input type="password" name="confirm_password" class="form-control" aria-label="Username"
+                        <input type="password" name="reg_confirm_password" class="form-control" aria-label="Username"
                             aria-describedby="basic-addon1">
                     </div>
 
@@ -87,14 +86,14 @@
                         <div class="input-group-prepend">
                             <span class="input-group-text" id="basic-addon1">Email</span>
                         </div>
-                        <input type="text" name="email" class="form-control" aria-label="Username"
+                        <input type="text" name="login_email" class="form-control" aria-label="Username"
                             aria-describedby="basic-addon1">
                     </div>
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
                             <span class="input-group-text" id="basic-addon1">Password</span>
                         </div>
-                        <input type="password" name="password" class="form-control" aria-label="Username"
+                        <input type="password" name="login_password" class="form-control" aria-label="Username"
                             aria-describedby="basic-addon1">
                     </div>
 
