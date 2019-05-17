@@ -1,0 +1,11 @@
+/Users/bryonbauer/Projects/CodingDojo/CSharp/Puzzles/obj/Debug/netcoreapp2.1/Puzzles.csprojAssemblyReference.cache
+/Users/bryonbauer/Projects/CodingDojo/CSharp/Puzzles/obj/Debug/netcoreapp2.1/Puzzles.csproj.CoreCompileInputs.cache
+/Users/bryonbauer/Projects/CodingDojo/CSharp/Puzzles/obj/Debug/netcoreapp2.1/Puzzles.AssemblyInfoInputs.cache
+/Users/bryonbauer/Projects/CodingDojo/CSharp/Puzzles/obj/Debug/netcoreapp2.1/Puzzles.AssemblyInfo.cs
+/Users/bryonbauer/Projects/CodingDojo/CSharp/Puzzles/bin/Debug/netcoreapp2.1/Puzzles.deps.json
+/Users/bryonbauer/Projects/CodingDojo/CSharp/Puzzles/bin/Debug/netcoreapp2.1/Puzzles.runtimeconfig.json
+/Users/bryonbauer/Projects/CodingDojo/CSharp/Puzzles/bin/Debug/netcoreapp2.1/Puzzles.runtimeconfig.dev.json
+/Users/bryonbauer/Projects/CodingDojo/CSharp/Puzzles/bin/Debug/netcoreapp2.1/Puzzles.dll
+/Users/bryonbauer/Projects/CodingDojo/CSharp/Puzzles/bin/Debug/netcoreapp2.1/Puzzles.pdb
+/Users/bryonbauer/Projects/CodingDojo/CSharp/Puzzles/obj/Debug/netcoreapp2.1/Puzzles.dll
+/Users/bryonbauer/Projects/CodingDojo/CSharp/Puzzles/obj/Debug/netcoreapp2.1/Puzzles.pdb

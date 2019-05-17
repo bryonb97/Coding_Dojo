@@ -1,0 +1,4 @@
+/Users/bryonbauer/Projects/CodingDojo/CSharp/Human/obj/Debug/netcoreapp2.1/Human.csprojAssemblyReference.cache
+/Users/bryonbauer/Projects/CodingDojo/CSharp/Human/obj/Debug/netcoreapp2.1/Human.csproj.CoreCompileInputs.cache
+/Users/bryonbauer/Projects/CodingDojo/CSharp/Human/obj/Debug/netcoreapp2.1/Human.AssemblyInfoInputs.cache
+/Users/bryonbauer/Projects/CodingDojo/CSharp/Human/obj/Debug/netcoreapp2.1/Human.AssemblyInfo.cs

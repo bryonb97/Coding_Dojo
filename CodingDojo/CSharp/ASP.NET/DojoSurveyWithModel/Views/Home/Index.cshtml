@@ -1,0 +1,39 @@
+﻿<body>    
+    <div class="container">
+        <h1>Coding Dojo Survey</h1>
+        <form action="result" method="POST">
+            <div asp-validation-summary="All"></div>
+            <p>
+                <label asp-for="Name">Name: </label>
+                <input type="text" class="form-input" asp-for="Name"/>
+            </p>
+
+            <h2>Dojo Location:</h2>
+            <p>                
+                    <label asp-for="Location">Location: </label>
+                    <select name="Location" class="form-input" asp-for="Location">
+                        <option value="Chicago" >Tulsa</option>
+                        <option value="Seattle">Seattle</option>
+                        <option value="Dallas">Dalas</option>
+                        <option value="San Diego">San Diego</option>
+                    </select>
+            </p>
+
+            <h2>Favorite Language:</h2>
+            <p>
+                    <label asp-for="Language">Language: </label>
+                    <select name="Language" class="form-input" asp-for="Language">
+                        <option value="JavaScript">JavaScript</option>
+                        <option value="Python">Python</option>
+                        <option value="C#">C#</option>
+                    </select>
+            </p>
+
+            <p>
+                <label asp-for="Textarea">Comment(Optional): </label>
+                <input type="textarea" class="form-input" asp-for="Textarea"/>
+            </p>
+            <input class="btn btn-primary" type="submit" value="Submit" >
+        </form>
+    </div>
+</body>

@@ -1,0 +1,13 @@
+<div class="container"></div>
+    <h1>Here are my Quotes!</h1>
+
+    @foreach(var quote in ViewBag.Quotes)
+    {
+        <!-- Remember, these are Dictionaries - so you must use user["KeyName"] to access the values within -->
+        <div class="card">
+            <p><strong>Quote:</strong> @quote["content"]</p>
+            <p>~<em>@quote["author"]</em></p>
+        </div>        
+    }
+    <a href="/">Back</a>
+</div>

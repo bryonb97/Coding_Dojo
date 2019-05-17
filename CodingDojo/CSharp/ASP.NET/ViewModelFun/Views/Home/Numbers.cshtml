@@ -1,0 +1,11 @@
+@model ViewModelFun.Models.Numbers
+
+<div class="row">
+    <div class="col-md-6 offset-3 text-center">
+        <h1 class="text-center">@ViewData["Title"]</h1>
+        @foreach(var number in @Model.numList)
+        {
+            <p class="text-center">@number</p>
+        }
+    </div>
+</div>

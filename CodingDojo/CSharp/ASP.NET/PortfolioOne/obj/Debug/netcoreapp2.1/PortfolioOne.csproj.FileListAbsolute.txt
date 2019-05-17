@@ -1,0 +1,14 @@
+/Users/bryonbauer/Projects/CodingDojo/CSharp/ASP.NET/PortfolioOne/bin/Debug/netcoreapp2.1/PortfolioOne.deps.json
+/Users/bryonbauer/Projects/CodingDojo/CSharp/ASP.NET/PortfolioOne/bin/Debug/netcoreapp2.1/PortfolioOne.runtimeconfig.json
+/Users/bryonbauer/Projects/CodingDojo/CSharp/ASP.NET/PortfolioOne/bin/Debug/netcoreapp2.1/PortfolioOne.runtimeconfig.dev.json
+/Users/bryonbauer/Projects/CodingDojo/CSharp/ASP.NET/PortfolioOne/bin/Debug/netcoreapp2.1/PortfolioOne.dll
+/Users/bryonbauer/Projects/CodingDojo/CSharp/ASP.NET/PortfolioOne/bin/Debug/netcoreapp2.1/PortfolioOne.pdb
+/Users/bryonbauer/Projects/CodingDojo/CSharp/ASP.NET/PortfolioOne/obj/Debug/netcoreapp2.1/PortfolioOne.csprojAssemblyReference.cache
+/Users/bryonbauer/Projects/CodingDojo/CSharp/ASP.NET/PortfolioOne/obj/Debug/netcoreapp2.1/PortfolioOne.csproj.CoreCompileInputs.cache
+/Users/bryonbauer/Projects/CodingDojo/CSharp/ASP.NET/PortfolioOne/obj/Debug/netcoreapp2.1/PortfolioOne.RazorAssemblyInfo.cache
+/Users/bryonbauer/Projects/CodingDojo/CSharp/ASP.NET/PortfolioOne/obj/Debug/netcoreapp2.1/PortfolioOne.RazorAssemblyInfo.cs
+/Users/bryonbauer/Projects/CodingDojo/CSharp/ASP.NET/PortfolioOne/obj/Debug/netcoreapp2.1/PortfolioOne.AssemblyInfoInputs.cache
+/Users/bryonbauer/Projects/CodingDojo/CSharp/ASP.NET/PortfolioOne/obj/Debug/netcoreapp2.1/PortfolioOne.AssemblyInfo.cs
+/Users/bryonbauer/Projects/CodingDojo/CSharp/ASP.NET/PortfolioOne/obj/Debug/netcoreapp2.1/PortfolioOne.RazorTargetAssemblyInfo.cache
+/Users/bryonbauer/Projects/CodingDojo/CSharp/ASP.NET/PortfolioOne/obj/Debug/netcoreapp2.1/PortfolioOne.dll
+/Users/bryonbauer/Projects/CodingDojo/CSharp/ASP.NET/PortfolioOne/obj/Debug/netcoreapp2.1/PortfolioOne.pdb

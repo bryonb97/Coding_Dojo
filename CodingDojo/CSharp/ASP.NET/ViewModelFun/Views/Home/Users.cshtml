@@ -1,0 +1,12 @@
+@model ViewModelFun.Models.Users
+
+<h2>Here are some Users!</h2>
+
+<ul>
+    @foreach(var user in @Model.users)
+    {
+        <li>
+            @user
+        </li>
+    }
+</ul>

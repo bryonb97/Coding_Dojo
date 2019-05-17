@@ -1,0 +1,27 @@
+@model DojoSurveyWithModel.Models.Survey
+
+<body>
+    <div class="container text-center">
+        <h1 style="margin-left: 30px">Submitted Information</h1>
+        <form action="" method="">
+            <table>
+                <tr>
+                    <td><h2>Name:</h2></td>
+                    <td><h2>@Model.Name</h2></td>
+                </tr>
+                <tr>
+                    <td><h2>Dojo Location:</h2></td>
+                    <td><h2>@Model.Location</h2></td>
+                </tr>
+                <tr>
+                    <td><h2>Favorite Language:</h2></td>
+                    <td><h2>@Model.Language</h2></td>
+                </tr>
+                <tr>
+                    <td><h2>Comment (optional):</h2></td>
+                    <td><h2>@Model.Textarea</h2></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
